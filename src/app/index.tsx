@@ -21,7 +21,7 @@ import Hero from "./screens/Hero";
 import TopFeatures from "./screens/TopFeatures";
 import Services from "./screens/Services";
 import Features from "./screens/Features";
-/* import Carousel from "./screens/Carousel"; */
+import Carousel from "./screens/Carousel";
 import BottomCTA from "./screens/BottomCTA";
 import Footer from "./screens/Footer";
 /* Sections:
@@ -68,7 +68,7 @@ const App: React.FC = () => {
         <TopFeatures />
         <Services />
         <Features />
-        {/* <Carousel /> */}
+        <Carousel />
         <BottomCTA />
         <Footer />
 
