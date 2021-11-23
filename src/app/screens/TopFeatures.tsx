@@ -29,11 +29,11 @@ const TopFeatures = () => {
     <>
       <Stack
         backgroundImage="url('/assets/image-computer.png')"
-        backgroundPosition={["0%  100%", "-25%  100%"]}
+        backgroundPosition={["50%  35%", "-25%  100%", "-4%  100%"]}
         backgroundRepeat={["no-repeat", "no-repeat"]}
-        backgroundSize={["contain", "60%"]}
+        backgroundSize={["90%", "60%", "50%"]}
         className="TopFeatures"
-        spacing={24}
+        spacing={[80,24,28]}
         width="100%"
       >
         <Stack>
@@ -42,8 +42,8 @@ const TopFeatures = () => {
             title="Keep track of your snippets"
           />
         </Stack>
-        <Stack direction="row-reverse" paddingBottom={28} paddingRight={32}>
-          <Stack spacing={12} width="35%">
+        <Stack direction="row-reverse" paddingBottom={[8,28,24]} paddingRight={[0,32]}>
+          <Stack spacing={12} width={["100%","35%"]}>
             {items}
           </Stack>
         </Stack>

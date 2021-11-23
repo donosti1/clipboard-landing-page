@@ -38,6 +38,7 @@ const StyledButton = (props: IButtonComps) => {
       borderTopWidth={1}
       color="white"
       size="lg"
+      
     >
       {props.label}
     </Button>
@@ -47,7 +48,7 @@ const ctaButtons = buttonInfo.map((but) => <StyledButton key={but.id} {...but} /
 const Buttons = () => {
   return (
     <>
-      <Stack className="Buttons" direction="row" spacing={6}>
+      <Stack className="Buttons" direction={["column","row"]} spacing={6} width={["100%","auto"]}>
         {ctaButtons}
       </Stack>
     </>

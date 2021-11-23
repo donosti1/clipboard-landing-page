@@ -59,8 +59,8 @@ const App: React.FC = () => {
         backgroundPosition={["50%  0%", "50%  2px"]}
         backgroundRepeat={["no-repeat", "no-repeat"]}
         backgroundSize={["contain", "contain"]}
-        minHeight="100vh"
-        paddingTop={32}
+        paddingTop={[24,32]}
+        paddingX={[4,0]}
         role="main"
         spacing={0}
       >
@@ -70,10 +70,10 @@ const App: React.FC = () => {
         <Features />
         <Carousel />
         <BottomCTA />
-        <Footer />
 
         {/* {icons} */}
       </Stack>
+      <Footer />
     </>
   );
 };

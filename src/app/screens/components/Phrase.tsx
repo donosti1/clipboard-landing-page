@@ -7,10 +7,10 @@ interface PhraseComponents {
 const Phrase = (props: PhraseComponents) => {
   return (
     <Stack alignItems="center" className="Phrase" paddingY={12} spacing={3}>
-      <Text as="h1" color="secondary.500" fontSize="4xl" fontWeight="700" letterSpacing="-1px">
+      <Text as="h1" color="secondary.500" fontSize={["3xl","4xl"]} fontWeight="700" letterSpacing="-1px" textAlign={["center","left"]}>
         {props.title}
       </Text>
-      <Text color="secondary.200" fontSize="lg" maxWidth="container.md" textAlign="center">
+      <Text color="secondary.200" fontSize={["md","lg"]} maxWidth="container.md" textAlign="center">
         {props.phrase}
       </Text>
     </Stack>

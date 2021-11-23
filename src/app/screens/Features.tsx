@@ -30,12 +30,12 @@ const Features = () => {
 
   return (
     <>
-      <Stack className="Features" paddingX={[4, 32]}>
+      <Stack className="Features" paddingX={[0, 32]}>
         <Phrase
           phrase="We’ve got the tools to boost your productivity."
           title="Supercharge your workflow"
         />
-        <Stack direction="row" spacing={6}>
+        <Stack direction={["column","row"]} spacing={[16,6]}>
           {items}
         </Stack>
       </Stack>

@@ -39,10 +39,10 @@ const Carousel = () => {
     return (
       <Stack
         key={sl.id}
+        className="carousel-item-stack"
         alignItems="center"
-        height={16}
+        height={[28,16]}
         justifyContent="center"
-        sx={{display: "flex!important;", width: "150px!important"}}
       >
         <Image alt={sl.company} justifySelf="center" src={imageUrl} />;
       </Stack>
@@ -53,15 +53,19 @@ const Carousel = () => {
   var settings = {
     infinite: true,
     speed: 500,
+    autoplay: true,
     slidesToShow: 5,
     slidesToScroll: 2,
     dots: false,
+    arrows: false,
     responsive: [
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          rows: 5,
+          slidesPerRow: 1
         },
       },
     ],
@@ -90,8 +94,9 @@ const Carousel = () => {
         id="carousel"
         paddingBottom={16}
         paddingTop={32}
-        paddingX={32}
+        paddingX={[0,32]}
         width="100%"
+        overflow="hidden"
       >
         <Slider {...settings} ref={sliderRef}>
           {slides}
