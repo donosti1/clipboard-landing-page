@@ -1,7 +1,7 @@
 import React from "react";
-import {Button, Image, Stack, StackDivider, Text} from "@chakra-ui/react";
+import {Image, Stack} from "@chakra-ui/react";
 
-import Logo from "/assets/logo.svg";
+/* import Logo from "/assets/logo.svg"; */
 
 import HeroPhrase from "./components/HeroPhrase";
 import Buttons from "./components/Buttons";

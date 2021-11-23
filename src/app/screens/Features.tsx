@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, Image, Stack, StackDivider, Text} from "@chakra-ui/react";
+import {Stack} from "@chakra-ui/react";
 
 import Phrase from "./components/Phrase";
 import FeaturesDescription from "./components/FeaturesDescription";
@@ -35,7 +35,7 @@ const Features = () => {
           phrase="We’ve got the tools to boost your productivity."
           title="Supercharge your workflow"
         />
-        <Stack direction={["column","row"]} spacing={[16,6]}>
+        <Stack direction={["column", "row"]} spacing={[16, 6]}>
           {items}
         </Stack>
       </Stack>

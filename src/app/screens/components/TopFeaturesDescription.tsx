@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, Image, Stack, StackDivider, Text} from "@chakra-ui/react";
+import {Stack, Text} from "@chakra-ui/react";
 interface Feature {
   title: string;
   feature: string;

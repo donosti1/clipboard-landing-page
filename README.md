@@ -6,8 +6,8 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-<!--   - [Screenshot](#screenshot)
-  - [Links](#links) -->
+  - [Screenshot](#screenshot)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
@@ -23,7 +23,7 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-<!-- ### Screenshot
+### Screenshot
 
 ![](./screenshot.jpg)
 
@@ -31,7 +31,7 @@ Users should be able to:
 
 - Solution URL: [https://github.com/donosti1/fm-clipboard-landing-page](https://github.com/donosti1/fm-clipboard-landing-page)
 - Live Site URL: [https://fm-clipboard-landing-page-donosti1.vercel.app/](https://fm-clipboard-landing-page-donosti1.vercel.app/)
- -->
+
 ## My process
 
 ### Built with

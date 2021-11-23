@@ -12,7 +12,11 @@ const navItems = [
   {id: 4, label: "Install Guide"},
 ];
 const navBar = navItems.map((ni) => (
-  <Text key={ni.id} textAlign={["center","left"]} _hover={{cursor: "pointer", color: "primary.500"}}>
+  <Text
+    key={ni.id}
+    _hover={{cursor: "pointer", color: "primary.500"}}
+    textAlign={["center", "left"]}
+  >
     {ni.label}
   </Text>
 ));
@@ -34,7 +38,7 @@ const Footer = () => {
   return (
     <>
       <Stack
-      alignItems="center"
+        alignItems="center"
         alignSelf="center"
         backgroundColor="secondary.100"
         direction={["column", "row"]}
@@ -51,13 +55,18 @@ const Footer = () => {
           columnGap={20}
           fontSize="lg"
           gridAutoFlow="column"
-          paddingRight={[0,24]}
-          rowGap={[8,4]}
-          templateRows={["repeat(5,1fr)","repeat(2,1fr)"]}
+          paddingRight={[0, 24]}
+          rowGap={[8, 4]}
+          templateRows={["repeat(5,1fr)", "repeat(2,1fr)"]}
         >
           {navBar}
         </Grid>
-        <Stack alignItems="center" color="secondary.500" direction={["row", "row"]} spacing={[8,4]}>
+        <Stack
+          alignItems="center"
+          color="secondary.500"
+          direction={["row", "row"]}
+          spacing={[8, 4]}
+        >
           {socialBar}
         </Stack>
       </Stack>

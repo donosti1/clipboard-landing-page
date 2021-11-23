@@ -1,9 +1,7 @@
 import React, {useEffect} from "react";
-import {Button, Image, Stack, StackDivider, Text} from "@chakra-ui/react";
+import {Image, Stack} from "@chakra-ui/react";
 import Slider from "react-slick";
 import "./carousel.css";
-/* import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css"; */
 
 const sliderData = [
   {
@@ -39,9 +37,9 @@ const Carousel = () => {
     return (
       <Stack
         key={sl.id}
-        className="carousel-item-stack"
         alignItems="center"
-        height={[28,16]}
+        className="carousel-item-stack"
+        height={[28, 16]}
         justifyContent="center"
       >
         <Image alt={sl.company} justifySelf="center" src={imageUrl} />;
@@ -65,7 +63,7 @@ const Carousel = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           rows: 5,
-          slidesPerRow: 1
+          slidesPerRow: 1,
         },
       },
     ],
@@ -92,11 +90,11 @@ const Carousel = () => {
       <Stack
         className="Carousel"
         id="carousel"
+        overflow="hidden"
         paddingBottom={16}
         paddingTop={32}
-        paddingX={[0,32]}
+        paddingX={[0, 32]}
         width="100%"
-        overflow="hidden"
       >
         <Slider {...settings} ref={sliderRef}>
           {slides}

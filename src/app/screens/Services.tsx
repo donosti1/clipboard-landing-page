@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, Image, Stack, StackDivider, Text} from "@chakra-ui/react";
+import {Image, Stack} from "@chakra-ui/react";
 
 import Phrase from "./components/Phrase";
 

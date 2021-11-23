@@ -1,21 +1,6 @@
 import React, {useEffect} from "react";
-import {
-  Button,
-  Icon,
-  Image,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalBody,
-  ModalCloseButton,
-  Radio,
-  RadioGroup,
-  Stack,
-  Text,
-  useDisclosure,
-} from "@chakra-ui/react";
-import {BsAlarm} from "react-icons/bs";
+import {Stack} from "@chakra-ui/react";
+/* import {BsAlarm} from "react-icons/bs"; */
 
 import Hero from "./screens/Hero";
 import TopFeatures from "./screens/TopFeatures";
@@ -24,23 +9,7 @@ import Features from "./screens/Features";
 import Carousel from "./screens/Carousel";
 import BottomCTA from "./screens/BottomCTA";
 import Footer from "./screens/Footer";
-/* Sections:
-  Hero
-  TopFeatures
-  Services
-  Features
-  Carousel
-  BottomCTA
-  Footer
-  //Comp:
-  HeroPhrase
-  Buttons
-  Phrase
-  TopFeaturesDescription
-  FeaturesDescription
-  FooterNav
-  SocialIcons
-*/
+
 const App: React.FC = () => {
   /* const item = [{id: 0, icon: BsAlarm}];
   const icons = item.map((it) => <Icon key={it.id} as={it.icon} color="white" />); */
@@ -59,8 +28,8 @@ const App: React.FC = () => {
         backgroundPosition={["50%  0%", "50%  2px"]}
         backgroundRepeat={["no-repeat", "no-repeat"]}
         backgroundSize={["contain", "contain"]}
-        paddingTop={[24,32]}
-        paddingX={[4,0]}
+        paddingTop={[24, 32]}
+        paddingX={[4, 0]}
         role="main"
         spacing={0}
       >

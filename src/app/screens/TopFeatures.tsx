@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, Image, Stack, StackDivider, Text} from "@chakra-ui/react";
+import {Stack} from "@chakra-ui/react";
 
 import Phrase from "./components/Phrase";
 import TopFeaturesDescription from "./components/TopFeaturesDescription";
@@ -33,7 +33,7 @@ const TopFeatures = () => {
         backgroundRepeat={["no-repeat", "no-repeat"]}
         backgroundSize={["90%", "60%", "50%"]}
         className="TopFeatures"
-        spacing={[80,24,28]}
+        spacing={[80, 24, 28]}
         width="100%"
       >
         <Stack>
@@ -42,8 +42,8 @@ const TopFeatures = () => {
             title="Keep track of your snippets"
           />
         </Stack>
-        <Stack direction="row-reverse" paddingBottom={[8,28,24]} paddingRight={[0,32]}>
-          <Stack spacing={12} width={["100%","35%"]}>
+        <Stack direction="row-reverse" paddingBottom={[8, 28, 24]} paddingRight={[0, 32]}>
+          <Stack spacing={12} width={["100%", "35%"]}>
             {items}
           </Stack>
         </Stack>
